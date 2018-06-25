@@ -1,0 +1,248 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  color:  rgb(99, 99, 99);
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spence {
+  font-size: 10vh;
+  color: rgba(255, 255, 255, 0.55);
+}
+.arrow {
+  opacity: 0.4;
+  height: 3vh;
+}
+.title {
+  margin-top: 100vh;
+  width: 100vw;
+  height: 50vh;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3vh;
+  color:  rgb(99, 99, 99);
+  justify-content: center;
+}
+.title h2{
+  margin: 0;
+}
+.abilities {
+  width: 100vw;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3vh;
+  background-color: rgb(112, 156, 177);
+  justify-content: center;
+  justify-content: space-around;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+.abilities h2 {
+  color: rgb(59, 59, 59);  
+}
+.abilitiesList {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2vh;
+}
+.skill {
+  height: 5vh;
+  margin: 0.5em;
+}
+.columnProjects {
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 1.5vh;
+}
+.columnProjects {
+  width: 100vw;
+}
+.project {
+  height: 30vh;
+  margin: 3vh;
+  border: grey solid thin;
+}
+.projectHold {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.github {
+  height: 2vh;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(21, 73, 105);
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+.contact p {
+  color: white;
+}
+.contactHold {
+  display: flex;
+  align-items: center;
+}
+.contactInfo p{
+  color: white;
+}
+.contactInfo div {
+  display: flex;
+  align-items: center;
+}
+.contactInfo div a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.contactInfo div p {
+  margin: 0.5em;
+}
+.fas{
+ color: white;
+ padding: 5px;
+}
+.fab{
+  color: white;
+  padding: 5px;
+}
+.far{
+  color: white;
+  padding: 5px;
+}
+.logo {
+  height: 10vw;
+  padding: 3vw;;
+}
+.bonus {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 3vh;
+  padding-top: 3vh;
+}
+.dog img {
+  height: 30vh;
+  border: grey thin solid;
+}
+.dog {
+  display: flex;
+  width: 50vw;
+  justify-content: space-around;
+}
+body {
+  display: block;
+}
+.App {
+  position: absolute;
+  z-index: -5;
+  height: 100vh;
+}
+
+html {
+  position: absolute;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .landing-viewport__video{
+    overflow-y: hidden;    
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .landing-viewport__video {
+    overflow-y: hidden;
+    width: auto;
+  }
+}
+
+.App-header {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-x: hidden;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.landing-viewport__video {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+video {
+  display: none;
+}
+header {
+  font-size: 1vw;
+  width: 100vw;
+  color: rgb(255, 255, 255);
+  background-image: url('screenshot.png');
+  background-attachment: fixed;
+  background-size: auto 100vh;
+}
+.name {
+  width: 80vw;
+  padding-top: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3vw;
+  height: 30vh; 
+}
+.title {
+  margin-top: 110vh;
+  height: 70vh;
+  font-size: 5vw;
+  width: 75vw;
+  margin-left: 15vw;
+  padding-bottom: 3vh;
+}
+.github {
+  height: 4vh;
+}
+
+}
