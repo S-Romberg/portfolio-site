@@ -78,7 +78,8 @@
   margin-bottom: 0vh;
 }
 #inner-box {
-  background: grey; 
+  background-image:url('./projects/project-background.png'); 
+  background-size: 100% 100%;
   border: grey solid thin;
   margin: 3vh;
   height: 30vh;
@@ -103,7 +104,8 @@
   padding: 0;
 }
 .link {
-  height: 2vh;
+  height: 30vh;
+  width: 100%
 }
 #outer-box:hover #inner-box {
   opacity: .9;
@@ -259,7 +261,7 @@ header {
   font-size: 1vw;
   width: 100vw;
   color: rgb(255, 255, 255);
-  background-image: url('screenshot.png');
+  background-image: url('screenshot.jpg');
   background-attachment: fixed;
   background-size: auto 100vh;
 }

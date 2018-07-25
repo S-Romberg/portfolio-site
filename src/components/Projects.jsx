@@ -5,7 +5,7 @@ import inspo from '../projects/Inspogram.png'
 import island from '../projects/Island2you.png'
 import music from '../projects/MusicPlayland.png'
 import voter from '../projects/Voter.png'
-import link from '../projects/link.png'
+import safety from '../projects/safety'
 
 class Projects extends Component {
 
@@ -14,15 +14,16 @@ class Projects extends Component {
       <div className='columnProjects'>
         <h2>Projects</h2>
         <div className='projects' >
-          <div className='projectHold'>
+        <div className='projectHold'>
           <div id='outer-box'>
-            <a href='https://galvanize-dogs.firebaseapp.com/'>
-              <img className='project' src={gdog} alt='gdog' />
+            <a href='https://github.com/S-Romberg/SafetyNet' >
+              <img className='project' src={safety} alt='SafetyNet' />
               <div id='inner-box'>
-              <img className='link' src={link} alt='link' />
-                <ul>
-                  <li>React.js</li>
+                  <ul>
+                  <li>React Native</li>
                   <li>JavaScript</li>
+                  <li>ChatKit</li>
+                  <li>Node.js</li>
                   <li>Knex.js</li>
                   <li>Express</li>
                   <li>PostgreSQL</li>
@@ -31,16 +32,15 @@ class Projects extends Component {
               </div>
             </a>
           </div>
-            <a href='https://github.com/S-Romberg/Galvanize-Dogs'>
+            <a href='https://github.com/S-Romberg/SafetyNet'>
               <img className='github' src={github} alt='github' />
             </a>
           </div>
-          <div className='projectHold'>
+        <div className='projectHold'>
           <div id='outer-box'>
             <a href='https://inspo-gram.firebaseapp.com' >
               <img className='project' src={inspo} alt='inspo' />
               <div id='inner-box'>
-              <img className='link' src={link} alt='link' />
                   <ul>
                   <li>React.js</li>
                   <li>JavaScript</li>
@@ -58,10 +58,29 @@ class Projects extends Component {
           </div>
           <div className='projectHold'>
           <div id='outer-box'>
+            <a href='https://galvanize-dogs.firebaseapp.com/'>
+              <img className='project' src={gdog} alt='gdog' />
+              <div id='inner-box'>
+                <ul>
+                  <li>React.js</li>
+                  <li>JavaScript</li>
+                  <li>Knex.js</li>
+                  <li>Express</li>
+                  <li>PostgreSQL</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+            <a href='https://github.com/S-Romberg/Galvanize-Dogs'>
+              <img className='github' src={github} alt='github' />
+            </a>
+          </div>
+          <div className='projectHold'>
+          <div id='outer-box'>
             <a href='https://voterappr.firebaseapp.com/'>
               <img className='project' src={voter} alt='music' />
               <div id='inner-box'>
-              <img className='link' src={link} alt='link' />
                   <ul>
                   <li>React.js</li>
                   <li>JavaScript</li>
@@ -69,7 +88,7 @@ class Projects extends Component {
                   <li>Express</li>
                   <li>PostgreSQL</li>
                   <li>CSS</li>
-                  <li>OAuth</li>
+                  <li>Auth</li>
                 </ul>
               </div>
             </a>
@@ -83,7 +102,6 @@ class Projects extends Component {
             <a href='https://islandtoyou.firebaseapp.com' >
               <img className='project' src={island} alt='island' />
               <div id='inner-box'>
-              <img className='link' src={link} alt='link' />
                   <ul>
                   <li>JavaScript</li>
                   <li>CSS</li>
@@ -100,7 +118,7 @@ class Projects extends Component {
             <a href='https://github.com/S-Romberg/music-playland'>
               <img className='project' src={music} alt='music' />
               <div id='inner-box'>
-                <img className='link' src={link} alt='link' />
+
                 <ul>
                   <li>React.js</li>
                   <li>JavaScript</li>
