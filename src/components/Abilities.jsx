@@ -31,7 +31,10 @@ class Abilities extends Component {
                     <img className='skill' src={react} alt='logo'/>
                 </div>
                 <div>
-                    <img className='skill' src={cypress} alt='logo'/>
+                    <img className='skill' src={redux} alt='logo'/>
+                </div>
+                <div>
+                    <img className='skill' src={angular} alt='logo'/>
                 </div>
                 <div>
                     <img className='skill' src={node} alt='logo'/>
@@ -40,16 +43,13 @@ class Abilities extends Component {
                     <img className='skill' src={postgresql} alt='logo'/>
                 </div>
                 <div>
-                    <img className='skill' src={redux} alt='logo'/>
-                </div>
-                <div>
-                    <img className='skill' src={angular} alt='logo'/>
+                    <img className='skill' src={knex} alt='logo'/>
                 </div>
                 <div>
                     <img className='skill' src={stripe} alt='logo'/>
                 </div>
                 <div>
-                    <img className='skill' src={knex} alt='logo'/>
+                    <img className='skill' src={cypress} alt='logo'/>
                 </div>
             </div>
         </div>

@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import logo from '../logos/logo-white.png'
+import dog from '../quinn.png'
 
 class Contact extends Component {
 
   render() {
     return (
+        <div>
         <div className='contact'>
             <div className='contactHold' >
             <img className='logo' src={logo} alt='logo'/>
@@ -26,13 +28,15 @@ class Contact extends Component {
                     <p>Linkedin.com/in/spencer-romberg</p></a>
                 </div>
                 <div>
-                    <a href='https://drive.google.com/file/d/1zgdTl1FqxP06CLy7cOvRnQiV_6nqam-X/view?usp=sharing'><i className="far fa-file-pdf"></i>
+                    <a href='https://drive.google.com/file/d/1fRgjp7wNZHtJqEHgrqkFjZ4nyUwiaMfU/view?usp=sharing'><i className="far fa-file-pdf"></i>
                     <p>Resume</p></a>
                 </div>
             </div>
-            {/* <button onClick={this.props.bonus}>Bonus!</button> */}
-
+           
             </div>
+        </div>
+        <div className='createdBy'><p>Created by Spencer Romberg 2018</p></div>
+        <div className='mobileBonus'><p>You're on mobile, so you get a picture of my dog! Congrats</p><img alt='quinn!' src={dog} /></div>
         </div>
     );
   }
