@@ -23,11 +23,15 @@
   height: 50vh;
   font-family: 'Montserrat', sans-serif;
   display: flex;
-  flex-direction: column;
   align-items: center;
   font-size: 3vh;
   color:  rgb(99, 99, 99);
   justify-content: center;
+  flex-direction: column;
+}
+.column {
+  display: flex;
+  flex-direction: column
 }
 .title h2{
   margin: 0;
@@ -121,6 +125,9 @@
 .columnProjects {
   width: 100vw;
 }
+.projects {
+  width: 80vw;
+}
 .project {
   height: 30vh;
   margin: 3vh;
@@ -135,11 +142,19 @@
   height: 2vh !important;
   width: 2vh !important;
 }
+.contactPic{
+  background-image: url("dolphinPic.JPG");
+  background-repeat: no-repeat;
+  background-size: 100vw auto;
+  background-attachment: fixed;
+  height: 65vh
+}
 .contact {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(21, 73, 105);
+  background-image: url("backgroundContact.png");
+  background-size: 100vw auto;
   padding-top: 3vh;
   padding-bottom: 3vh;
 }
@@ -164,6 +179,16 @@
 }
 .contactInfo div p {
   margin: 0.5em;
+}
+.resume {
+  height: 90vh
+}
+.resumeContainer{
+  display: flex;
+  justify-content: center;
+  background-color: #043A63;
+  height: 90vh;
+  width: 100vw;
 }
 .createdBy{
   width: 90vw;
@@ -252,7 +277,23 @@ html {
   min-width: 100%; 
   min-height: 100%;
 }
-
+@media only screen and (max-width: 1200px) {
+  .personalPic{
+    background-size: auto 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    height: 60vh;
+  }
+  .contactPic{
+    background-size: auto 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    height: 60vh;
+  }
+  .contact{
+    background-size: auto 100%;
+  }
+}
 @media only screen and (max-width: 700px) {
 video {
   display: none;
@@ -261,7 +302,7 @@ header {
   font-size: 1vw;
   width: 100vw;
   color: rgb(255, 255, 255);
-  background-image: url('screenshot.jpg');
+  background-image: url('screenshot.png');
   background-attachment: fixed;
   background-size: auto 100vh;
 }
@@ -278,24 +319,40 @@ header {
 .title {
   margin-top: 110vh;
   height: 70vh;
-  font-size: 5vw;
+  font-size: 3vh;
   width: 75vw;
   margin-left: 15vw;
   padding-bottom: 3vh;
 }
+#description{
+  display: flex;
+  flex-direction: column;
+}
+.projects {
+  width: 100vw;
+}
 .personalPic{
-  background-size: auto 60vh;
+  background-size: auto 40vh;
   background-attachment: fixed;
-  background-position: center top;
+  background-position: center;
   height: 40vh;
+}
+.contactPic{
+  display: none;
 }
 .github {
   height: 4vh;
 }
+.contact{
+  background-size: auto 100%;
+}
+.resume {
+  width: 95vw;
+  height: auto
+}
 .createdBy > p{
   padding: 3vw;
   margin:0;
-
 }
 .mobileBonus{
   display: flex;

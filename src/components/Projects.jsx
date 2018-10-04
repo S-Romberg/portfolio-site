@@ -99,7 +99,7 @@ class Projects extends Component {
               <img className='github' src={github} alt='github' />
             </a>
           </div>
-          <div data-aos-easing="ease-in-sine" data-aos="fade-up" data-aos-anchor-placement="center-top" className='projectHold'>
+          <div data-aos-easing="ease-in-sine" data-aos="fade-up" data-aos-anchor-placement="center-center" className='projectHold'>
           <div id='outer-box'>
             <a href='https://islandtoyou.firebaseapp.com' >
               <img className='project' src={island} alt='island' />
@@ -115,7 +115,7 @@ class Projects extends Component {
               <img className='github' src={github} alt='github' />
             </a>
           </div>
-          <div data-aos-easing="ease-in-sine" data-aos="fade-up" data-aos-anchor-placement="center-top" className='projectHold'>
+          <div data-aos-easing="ease-in-sine" data-aos="fade-up" data-aos-anchor-placement="center-center" className='projectHold'>
           <div id='outer-box'>
             <a href='https://github.com/S-Romberg/music-playland'>
               <img className='project' src={music} alt='music' />
