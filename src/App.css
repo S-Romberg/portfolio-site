@@ -36,6 +36,13 @@
 .title h2{
   margin: 0;
 }
+.description {
+  width: 60vw;
+
+}
+#description{
+  text-align: center;
+}
 .abilities {
   width: 100vw;
   font-family: 'Montserrat', sans-serif;
@@ -180,8 +187,10 @@
 .contactInfo div p {
   margin: 0.5em;
 }
+
 .resume {
-  height: 90vh
+  width: 60vw;
+  margin-left: 17%;
 }
 .resumeContainer{
   display: flex;
@@ -327,6 +336,8 @@ header {
 #description{
   display: flex;
   flex-direction: column;
+  width: 80vw;
+  padding-bottom: 5vh;
 }
 .projects {
   width: 100vw;
@@ -347,8 +358,8 @@ header {
   background-size: auto 100%;
 }
 .resume {
-  width: 95vw;
-  height: auto
+  width: 80vw;
+  margin: auto
 }
 .createdBy > p{
   padding: 3vw;

@@ -5,7 +5,7 @@ class Header extends Component {
     return (
         <div id='description' name='description'  className='title'>
             <h2>Full Stack Developer</h2>
-            <p >I am a full stack software developer currently expanding my skills <br/> and abilities at a Galvanize Immersive program. My experience in the work <br/> force has taught my to treat each obstacle as a new challenge to overcome, <br/> and to never be satisfied with the amount of understanding I have.</p>
+            <p className='description'>I am a full stack software developer currently expanding my skills and abilities as a Resident Instructor at Galvanize Web Development Immersive. My experience in the work force has taught me to treat each obstacle as a new challenge to overcome, and to never be satisfied with the amount of understanding I have.</p>
         </div>
     );
   }

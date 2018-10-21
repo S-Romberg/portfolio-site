@@ -17,7 +17,7 @@ class Projects extends Component {
         <h2>Projects</h2>
         <div className='projects' >
         <div className='projectHold'>
-          <div data-aos-easing="ease-in-sine" data-aos="fade-up"  id='outer-box'>
+          <div  id='outer-box'>
             <a href='https://github.com/S-Romberg/SafetyNet' >
               <img  className='project' src={safety} alt='SafetyNet' />
               <div id='inner-box'>
@@ -39,7 +39,7 @@ class Projects extends Component {
             </a>
           </div>
         <div className='projectHold'>
-          <div data-aos-easing="ease-in-sine" data-aos="fade-up"  id='outer-box'>
+          <div id='outer-box'>
             <a href='https://inspo-gram.firebaseapp.com' >
               <img className='project' src={inspo} alt='inspo' />
               <div id='inner-box'>
@@ -58,7 +58,7 @@ class Projects extends Component {
               <img className='github' src={github} alt='github' />
             </a>
           </div>
-          <div data-aos-easing="ease-in-sine" data-aos="fade-up" data-aos-anchor-placement="center-center" className='projectHold'>
+          <div className='projectHold'>
           <div id='outer-box'>
             <a href='https://galvanize-dogs.firebaseapp.com/'>
               <img className='project' src={gdog} alt='gdog' />
@@ -78,7 +78,7 @@ class Projects extends Component {
               <img className='github' src={github} alt='github' />
             </a>
           </div>
-          <div data-aos-easing="ease-in-sine" data-aos="fade-up" data-aos-anchor-placement="center-center" className='projectHold'>
+          <div className='projectHold'>
           <div id='outer-box'>
             <a href='https://voterappr.firebaseapp.com/'>
               <img className='project' src={voter} alt='music' />
@@ -99,7 +99,7 @@ class Projects extends Component {
               <img className='github' src={github} alt='github' />
             </a>
           </div>
-          <div data-aos-easing="ease-in-sine" data-aos="fade-up" data-aos-anchor-placement="center-center" className='projectHold'>
+          <div  className='projectHold'>
           <div id='outer-box'>
             <a href='https://islandtoyou.firebaseapp.com' >
               <img className='project' src={island} alt='island' />
@@ -115,7 +115,7 @@ class Projects extends Component {
               <img className='github' src={github} alt='github' />
             </a>
           </div>
-          <div data-aos-easing="ease-in-sine" data-aos="fade-up" data-aos-anchor-placement="center-center" className='projectHold'>
+          <div  className='projectHold'>
           <div id='outer-box'>
             <a href='https://github.com/S-Romberg/music-playland'>
               <img className='project' src={music} alt='music' />
