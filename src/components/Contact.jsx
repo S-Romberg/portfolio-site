@@ -24,11 +24,11 @@ class Contact extends Component {
                     <p>Spencer.Romberg@gmail.com</p>
                 </div>
                 <div >
-                    <a href='https://github.com/S-Romberg'><i className="fab fa-github-square"></i>
+                    <a href='https://github.com/S-Romberg' target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square"></i>
                     <p>github.com/S-Romberg</p></a>
                 </div>
                 <div>
-                    <a href='https://www.linkedin.com/in/spencer-romberg/'><i className="fab fa-linkedin"></i>
+                    <a href='https://www.linkedin.com/in/spencer-romberg/' target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i>
                     <p>Linkedin.com/in/spencer-romberg</p></a>
                 </div>
                 <div>

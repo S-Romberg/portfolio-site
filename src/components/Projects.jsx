@@ -18,7 +18,7 @@ class Projects extends Component {
         <div className='projects' >
         <div className='projectHold'>
           <div  id='outer-box'>
-            <a href='https://github.com/S-Romberg/SafetyNet' >
+            <a href='https://github.com/S-Romberg/SafetyNet' target="_blank" rel="noopener noreferrer">
               <img  className='project' src={safety} alt='SafetyNet' />
               <div id='inner-box'>
                   <ul>
@@ -34,13 +34,13 @@ class Projects extends Component {
               </div>
             </a>
           </div>
-            <a href='https://github.com/S-Romberg/SafetyNet'>
+            <a href='https://github.com/S-Romberg/SafetyNet' target="_blank" rel="noopener noreferrer">
               <img className='github' src={github} alt='github' />
             </a>
           </div>
         <div className='projectHold'>
           <div id='outer-box'>
-            <a href='https://inspo-gram.firebaseapp.com' >
+            <a href='https://inspo-gram.firebaseapp.com' target="_blank" rel="noopener noreferrer" >
               <img className='project' src={inspo} alt='inspo' />
               <div id='inner-box'>
                   <ul>
@@ -54,13 +54,13 @@ class Projects extends Component {
               </div>
             </a>
           </div>
-            <a href='https://github.com/S-Romberg/inspogram-client'>
+            <a href='https://github.com/S-Romberg/inspogram-client' target="_blank" rel="noopener noreferrer">
               <img className='github' src={github} alt='github' />
             </a>
           </div>
           <div className='projectHold'>
           <div id='outer-box'>
-            <a href='https://galvanize-dogs.firebaseapp.com/'>
+            <a href='https://galvanize-dogs.firebaseapp.com/' target="_blank" rel="noopener noreferrer">
               <img className='project' src={gdog} alt='gdog' />
               <div id='inner-box'>
                 <ul>
@@ -74,13 +74,13 @@ class Projects extends Component {
               </div>
             </a>
           </div>
-            <a href='https://github.com/S-Romberg/Galvanize-Dogs'>
+            <a href='https://github.com/S-Romberg/Galvanize-Dogs' target="_blank" rel="noopener noreferrer">
               <img className='github' src={github} alt='github' />
             </a>
           </div>
           <div className='projectHold'>
           <div id='outer-box'>
-            <a href='https://voterappr.firebaseapp.com/'>
+            <a href='https://voterappr.firebaseapp.com/' target="_blank" rel="noopener noreferrer">
               <img className='project' src={voter} alt='music' />
               <div id='inner-box'>
                   <ul>
@@ -95,13 +95,13 @@ class Projects extends Component {
               </div>
             </a>
           </div>
-            <a href='https://github.com/S-Romberg/voter'>
+            <a href='https://github.com/S-Romberg/voter' target="_blank" rel="noopener noreferrer">
               <img className='github' src={github} alt='github' />
             </a>
           </div>
           <div  className='projectHold'>
           <div id='outer-box'>
-            <a href='https://islandtoyou.firebaseapp.com' >
+            <a href='https://islandtoyou.firebaseapp.com' target="_blank" rel="noopener noreferrer">
               <img className='project' src={island} alt='island' />
               <div id='inner-box'>
                   <ul>
@@ -111,13 +111,13 @@ class Projects extends Component {
               </div>
             </a>
           </div>
-            <a href='https://github.com/S-Romberg/islandLife'>
+            <a href='https://github.com/S-Romberg/islandLife' target="_blank" rel="noopener noreferrer">
               <img className='github' src={github} alt='github' />
             </a>
           </div>
           <div  className='projectHold'>
           <div id='outer-box'>
-            <a href='https://github.com/S-Romberg/music-playland'>
+            <a href='https://github.com/S-Romberg/music-playland' target="_blank" rel="noopener noreferrer">
               <img className='project' src={music} alt='music' />
               <div id='inner-box'>
 
@@ -129,7 +129,7 @@ class Projects extends Component {
               </div>
             </a>
           </div>
-            <a href='https://github.com/S-Romberg/music-playland'>
+            <a href='https://github.com/S-Romberg/music-playland' target="_blank" rel="noopener noreferrer">
               <img className='github' src={github} alt='github' />
             </a>
           </div>

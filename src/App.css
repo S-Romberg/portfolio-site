@@ -131,6 +131,7 @@
 }
 .columnProjects {
   width: 100vw;
+
 }
 .projects {
   width: 80vw;
@@ -138,7 +139,6 @@
 .project {
   height: 30vh;
   margin: 3vh;
-  border: grey solid thin;
 }
 .projectHold {
   display: flex;
