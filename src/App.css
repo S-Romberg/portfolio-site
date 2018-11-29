@@ -112,18 +112,22 @@
   justify-content: center;
   align-items: center;
   flex-direction: column-reverse;
+  
 }
 #inner-box li {
   color: white;
   list-style: none;
   text-align: center;
+  
 }
 #inner-box ul {
   padding: 0;
 }
 .link {
   height: 30vh;
-  width: 100%
+  width: 100%;
+  background-color: black;
+  box-shadow: 7px 7px 5px grey;
 }
 #outer-box:hover #inner-box {
   opacity: .9;
@@ -303,7 +307,7 @@ html {
     background-size: auto 100%;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 500px) {
 video {
   display: none;
 }
