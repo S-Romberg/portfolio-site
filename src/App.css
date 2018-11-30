@@ -55,6 +55,7 @@
   justify-content: space-around;
   padding-top: 3vh;
   padding-bottom: 3vh;
+  height: 30vh;
 }
 .abilities h2 {
   color: rgb(59, 59, 59);  
@@ -68,12 +69,32 @@
   height: 5vh;
   margin: 0.5em;
 }
+.express {
+  height: auto;
+  width: 5vh;
+}
+.skillTyped {
+  font-size: 0;
+}
+.skillContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 15vh;
+}
+.skillContainer:hover .skillTyped{
+  padding: 0;
+  margin: 0;
+  font-size: 1.5vh;
+  color: white;
+  text-align: center;
+}
 .personalPic{
   background-image: url("personal-site-pic.jpg");
   background-repeat: no-repeat;
   background-size: 100vw auto;
   background-attachment: fixed;
-  height: 60vh
+  height: 60vh;
 }
 .columnProjects {
   padding-top: 3vh;
@@ -81,6 +102,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgba(246, 246, 246, 0.6)
 }
 .projects {
   display: flex;
@@ -304,7 +326,7 @@ html {
     height: 60vh;
   }
   .contact{
-    background-size: auto 100%;
+    background-size: auto 100vw;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -331,11 +353,10 @@ header {
 }
 .title {
   margin-top: 110vh;
-  height: 70vh;
+  height: 65vh;
   font-size: 3vh;
   width: 75vw;
   margin-left: 15vw;
-  padding-bottom: 3vh;
 }
 #description{
   display: flex;
@@ -343,13 +364,26 @@ header {
   width: 80vw;
   padding-bottom: 5vh;
 }
+.description {
+  width: 75vw;
+}
+.skillContainer {
+  height: 10vh;
+}
+.abilities {
+  height: 40vh;
+}
+.abilitiesList {
+  display: flex;
+  justify-content: center;
+}
 .projects {
   width: 100vw;
 }
 .personalPic{
   background-size: auto 40vh;
-  background-attachment: fixed;
   background-position: center;
+  background-attachment: scroll;
   height: 40vh;
 }
 .contactPic{
