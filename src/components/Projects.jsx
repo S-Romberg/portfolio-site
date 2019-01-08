@@ -8,6 +8,7 @@ import island from '../projects/Island2you.png'
 import music from '../projects/MusicPlayland.png'
 import voter from '../projects/Voter.png'
 import safety from '../projects/safetynet.png'
+import todo from '../projects/todo.png'
 
 AOS.init();
 class Projects extends Component {
@@ -75,6 +76,24 @@ class Projects extends Component {
             </a>
           </div>
             <a href='https://github.com/S-Romberg/Galvanize-Dogs' target="_blank" rel="noopener noreferrer">
+              <img className='github' src={github} alt='github' />
+            </a>
+          </div>
+          <div  className='projectHold'>
+          <div id='outer-box'>
+            <a href='https://s3-rails-todo.herokuapp.com/' target="_blank" rel="noopener noreferrer">
+              <img className='project' src={todo} alt='todo' />
+              <div id='inner-box'>
+
+                <ul>
+                  <li>Ruby on Rails</li>
+                  <li>AWS - S3</li>
+                  <li>SCSS</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+            <a href='https://github.com/S-Romberg/todo-in-ruby' target="_blank" rel="noopener noreferrer">
               <img className='github' src={github} alt='github' />
             </a>
           </div>

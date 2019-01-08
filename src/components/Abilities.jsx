@@ -12,6 +12,10 @@ import angular from '../logos/angular.png'
 import stripe from '../logos/stripe.png'
 import knex from '../logos/knex.png'
 import express from '../logos/Express.png'
+import rails from '../logos/rails.png'
+import ruby from '../logos/ruby.png'
+import aws from '../logos/aws.png'
+import golang from '../logos/golang.png'
 
 class Abilities extends Component {
   render() {
@@ -56,12 +60,31 @@ class Abilities extends Component {
                     <p className='skillTyped' >PostgreSQL</p>
                 </div>
                 <div className='skillContainer'>
+                    <img className='skill rails' src={rails} alt='logo'/>
+                    <p className='skillTyped' >Ruby on Rails</p>
+                </div>
+                <div className='skillContainer'>
                     <img className='skill' src={stripe} alt='logo'/>
                     <p className='skillTyped' >Stripe</p>
                 </div>
                 <div className='skillContainer'>
                     <img className='skill' src={cypress} alt='logo'/>
                     <p className='skillTyped' >Cypress</p>
+                </div>
+            </div>
+            <h2>I'm learning some stuff</h2>
+            <div className='abilitiesList'>
+                <div className='skillContainer'>
+                    <img className='skill' src={golang} alt='logo'/>
+                    <p className='skillTyped' >Go</p>
+                </div>
+                <div className='skillContainer'>
+                    <img className='skill' src={ruby} alt='logo'/>
+                    <p className='skillTyped' >Ruby</p>
+                </div>
+                <div className='skillContainer'>
+                    <img className='skill' src={aws} alt='logo'/>
+                    <p className='skillTyped' >AWS</p>
                 </div>
             </div>
         </div>

@@ -54,10 +54,11 @@
   justify-content: space-around;
   padding-top: 3vh;
   padding-bottom: 3vh;
-  height: 30vh;
+  height: 50vh;
 }
 .abilities h2 {
-  color: rgb(59, 59, 59);  
+  color: rgb(59, 59, 59); 
+  margin-bottom: 0; 
 }
 .abilitiesList {
   display: flex;
@@ -67,6 +68,9 @@
 .skill {
   height: 5vh;
   margin: 0.5em;
+}
+.rails {
+  margin-right: 0;
 }
 .express {
   height: auto;
@@ -360,7 +364,8 @@ header {
   padding-bottom: 5vh;
 }
 .description {
-  width: 70vw;
+  width: 75vw;
+  margin-left: -8vw;
 }
 .skillContainer {
   height: 10vh;
