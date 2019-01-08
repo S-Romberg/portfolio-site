@@ -24,13 +24,11 @@ class App extends Component {
   }
 
   bonus = (event) => {
-    console.log('bonus')
     this.setState({render: !this.state.render})
   }
 
   showModal () {
     this.setState({ modal: true });
-    console.log('hey')
   }
   
   closeModal () {
