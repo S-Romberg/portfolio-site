@@ -54,7 +54,7 @@ class Abilities extends Component {
             <div className='abilitiesList'>
                 <div className='skillContainer'>
                     <img className='skill' src={discrete} alt='discrete math symbol'/>
-                    <p className='skillTyped' >Dicrete Math</p>
+                    <p className='skillTyped' >Discrete Math</p>
                 </div>
                 <div className='skillContainer'>
                     <img className='skill' src={java} alt='java logo'/>
