@@ -5,7 +5,7 @@
   "dependencies": {
     "aos": "^2.3.3",
     "react": "^16.4.0",
-    "react-dom": "^16.4.0",
+    "react-dom": "^16.4.2",
     "react-modal": "^3.6.1",
     "react-pdf": "^3.0.5",
     "react-scripts": "1.1.4",
