@@ -39,7 +39,6 @@ class Contact extends Component {
             </div>
         </div>
         <div className='createdBy'><p>Created by Spencer Romberg 2018</p></div>
-        <div className='mobileBonus'><p>You're on mobile, so you get a picture of my dog! Congrats</p><img alt='quinn!' src={dog} /></div>
         </div>
     );
   }

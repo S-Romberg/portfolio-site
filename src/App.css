@@ -124,7 +124,7 @@
   margin-bottom: 0vh;
 }
 #inner-box {
-  background-image:url('./projects/project-background.png'); 
+  background-color: rgb(50, 50, 50);
   background-size: 100% 100%;
   border: grey solid thin;
   margin: 3vh;
@@ -146,7 +146,13 @@
   color: white;
   list-style: none;
   text-align: center;
-  
+}
+
+#inner-box p {
+  color: rgb(170, 170, 170);
+  list-style: none;
+  text-align: center;
+  padding-bottom: 0.2vh;
 }
 #inner-box ul {
   padding: 0;
@@ -158,7 +164,7 @@
   box-shadow: 7px 7px 5px grey;
 }
 #outer-box:hover #inner-box {
-  opacity: .9;
+  opacity: .95;
   transition: opacity .5s;
 }
 .project {
@@ -331,6 +337,9 @@ html {
   }
 }
 @media only screen and (max-width: 500px) {
+*{
+  overflow-x: hidden;
+  }
 video {
   display: none;
 }
@@ -342,8 +351,12 @@ header {
   background-attachment: fixed;
   background-size: auto 100vh;
 }
+.spence {
+  overflow-x: visible;
+}
 .name {
-  width: 80vw;
+  overflow-x: visible;
+  width: 70vw;
   padding-top: 0;
   display: flex;
   justify-content: center;
@@ -354,7 +367,7 @@ header {
 }
 .title {
   margin-top: 110vh;
-  height: 65vh;
+  height: 75vh;
   font-size: 3vh;
   width: 75vw;
   margin-left: 15vw;
@@ -363,6 +376,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 80vw;
+  height: 85vh;
   padding-bottom: 5vh;
 }
 .description {
@@ -378,6 +392,9 @@ header {
 .abilitiesList {
   display: flex;
   justify-content: center;
+}
+.columnProjects {
+  text-align: center;
 }
 .projects {
   width: 100vw;
@@ -396,6 +413,7 @@ header {
 }
 .contact{
   background-size: auto 100%;
+  padding-top: 3vh;
 }
 .resume {
   width: 80vw;

@@ -10,22 +10,25 @@ class Projects extends Component {
   render() {
     return (
       <div className='columnProjects'>
-        <h2>Projects and Accomplishments</h2>
+        <h2>A couple things that I've worked on</h2>
         <div className='projects' >
         <div className='projectHold'>
           <div  id='outer-box'>
             <a href='https://github.com/S-Romberg/SafetyNet' target="_blank" rel="noopener noreferrer">
               <img  className='project' src={safety} alt='SafetyNet' />
               <div id='inner-box'>
-                  <ul>
+                <ul>
+                  <p>
+                    <i class="fas fa-link"></i>
+                    My first passion project
+
+                  </p>
                   <li>React Native</li>
                   <li>JavaScript</li>
-                  <li>ChatKit</li>
                   <li>Node.js</li>
                   <li>Knex.js</li>
                   <li>Express</li>
                   <li>PostgreSQL</li>
-                  <li>CSS</li>
                 </ul>
               </div>
             </a>
@@ -37,6 +40,10 @@ class Projects extends Component {
               <img  className='project' src={equifax} alt='Equifax' />
               <div id='inner-box'>
                   <ul>
+                    <p>
+                    <i class="fas fa-link"></i>
+                    Containerized 21 independent Rails applications to the hardened specifications of the Equifax standard
+                  </p>
                   <li>Ruby on Rails</li>
                   <li>Docker</li>
                   <li>Google Cloud</li>
