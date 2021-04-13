@@ -45,7 +45,6 @@ class App extends Component {
         <Abilities />
         <Picture />
         <Projects />
-        <ContactPic />
         <Contact showModal={this.showModal} bonus={this.bonus} />
         <ReactModal isOpen={this.state.modal}>
           <Resume />

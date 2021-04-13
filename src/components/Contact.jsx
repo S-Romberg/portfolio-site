@@ -21,18 +21,19 @@ class Contact extends Component {
                 </div>
                 <div>
                     <i className="fas fa-envelope"></i>
-                    <p>Spencer.Romberg@gmail.com</p>
+                    <p>spencer.romberg@gmail.com</p>
                 </div>
                 <div >
                     <a href='https://github.com/S-Romberg' target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square"></i>
-                    <p>github.com/S-Romberg</p></a>
+                    <p>github.com/s-romberg</p></a>
                 </div>
                 <div>
                     <a href='https://www.linkedin.com/in/spencer-romberg/' target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i>
-                    <p>Linkedin.com/in/spencer-romberg</p></a>
+                    <p>linkedin.com/in/spencer-romberg</p></a>
                 </div>
                 <div>
-                    <i className="far fa-file-pdf"></i><p onClick={this.props.showModal}>Resume</p>
+                  <i className="far fa-file-pdf"></i>
+                  <a href='https://drive.google.com/file/d/1JYea4Qe5sdc9MW0OkU-mvAdV3rJxl-fq/view?usp=sharing' target="_blank" rel="noopener noreferrer"><p>resume</p></a>
                 </div>
             </div>
             </div>
