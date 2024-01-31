@@ -12,8 +12,10 @@ export default function Home() {
     <div className="App">
       <Header />
       <Body />
-      <Projects />
-      <Writing />
+      <div className="flex flex-col justify-center lg:flex-row py-8">
+        <Projects />
+        <Writing />
+      </div>
       <Contact />
     </div>
   );

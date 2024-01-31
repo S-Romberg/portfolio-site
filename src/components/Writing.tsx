@@ -2,14 +2,12 @@ import React from 'react';
 import {
   Carousel,
   CarouselContent,
-  CarouselNext,
-  CarouselPrevious,
 } from '@/components/ui/carousel';
 import CarouselCard from '@/components/CarouselCard';
 
 export default function Writing() {
   return (
-    <div className="flex w-screen flex-col py-8 items-center justify-center bg-slate-200">
+    <div className="flex flex-col py-8 items-center justify-center lg:pl-16">
       <h2 className="text-3xl text-slate-600 font-semibold text-center mb-8 pb-2 border-b border-solid border-slate-400 w-3/4">Blogs and Articles</h2>
       <Carousel className="w-fit max-w-3xl">
         <CarouselContent className="flex items-center">
@@ -32,8 +30,6 @@ export default function Writing() {
             title="I have a problem, will a code change fix it?"
           />
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
       </Carousel>
     </div>
   );

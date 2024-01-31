@@ -1,8 +1,9 @@
-import * as React from 'react';
+import React, { PropsWithChildren } from 'react';
 import useEmblaCarousel, { type UseEmblaCarouselType } from 'embla-carousel-react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 import { cn } from '@lib/utils';
+import { EmblaCarouselType } from 'embla-carousel';
 import { Button } from '@/components/ui/button';
 
 type CarouselApi = UseEmblaCarouselType[1];
@@ -38,6 +39,23 @@ function useCarousel() {
   return context;
 }
 
+type PropType = PropsWithChildren<
+React.DetailedHTMLProps<
+React.ButtonHTMLAttributes<HTMLButtonElement>,
+HTMLButtonElement
+>
+>;
+
+const DotButton: React.FC<PropType> = (props) => {
+  const { children, ...restProps } = props;
+
+  return (
+    <button type="button" {...restProps}>
+      {children}
+    </button>
+  );
+};
+
 const Carousel = React.forwardRef<
 HTMLDivElement,
 React.HTMLAttributes<HTMLDivElement> & CarouselProps
@@ -63,13 +81,15 @@ React.HTMLAttributes<HTMLDivElement> & CarouselProps
     );
     const [canScrollPrev, setCanScrollPrev] = React.useState(false);
     const [canScrollNext, setCanScrollNext] = React.useState(false);
+    const [scrollSnaps, setScrollSnaps] = React.useState<number[]>([]);
+    const [selectedIndex, setSelectedIndex] = React.useState(0);
 
     // eslint-disable-next-line @typescript-eslint/no-shadow
     const onSelect = React.useCallback((api: CarouselApi) => {
       if (!api) {
         return;
       }
-
+      setSelectedIndex(api.selectedScrollSnap());
       setCanScrollPrev(api.canScrollPrev());
       setCanScrollNext(api.canScrollNext());
     }, []);
@@ -81,6 +101,15 @@ React.HTMLAttributes<HTMLDivElement> & CarouselProps
     const scrollNext = React.useCallback(() => {
       api?.scrollNext();
     }, [api]);
+
+    const scrollTo = React.useCallback(
+      (index: number) => api && api.scrollTo(index),
+      [api],
+    );
+
+    const onInit = React.useCallback((emblaApi: EmblaCarouselType) => {
+      setScrollSnaps(emblaApi.scrollSnapList());
+    }, []);
 
     const handleKeyDown = React.useCallback(
       (event: React.KeyboardEvent<HTMLDivElement>) => {
@@ -99,9 +128,17 @@ React.HTMLAttributes<HTMLDivElement> & CarouselProps
       if (!api || !setApi) {
         return;
       }
-
       setApi(api);
     }, [api, setApi]);
+
+    React.useEffect(() => {
+      if (!api) return;
+      onInit(api);
+      onSelect(api);
+      api.on('reInit', onInit);
+      api.on('reInit', onSelect);
+      api.on('select', onSelect);
+    }, [api, onInit, onSelect]);
 
     React.useEffect(() => {
       if (!api) {
@@ -142,6 +179,17 @@ React.HTMLAttributes<HTMLDivElement> & CarouselProps
           {...props}
         >
           {children}
+          <div className="embla__dots">
+            {scrollSnaps.map((_, index) => (
+              <DotButton
+                key={index}
+                onClick={() => scrollTo(index)}
+                className={'embla__dot'.concat(
+                  index === selectedIndex ? ' embla__dot--selected' : '',
+                )}
+              />
+            ))}
+          </div>
         </div>
       </CarouselContext.Provider>
     );

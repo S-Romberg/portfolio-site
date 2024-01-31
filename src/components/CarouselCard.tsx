@@ -11,10 +11,10 @@ export default function CarouselCard({ link, image, title, additionalText }: { l
         style={{ '--image-url': `url(${image})` }}
         href={link}
         target="_blank"
-        className="relative bg-blend-multiply bg-slate-700 bg-[image:var(--image-url)] bg-cover bg-center bg-no-repeat flex h-80 flex-col gap-4 items-center justify-center p-6 rounded"
+        className="w-3/4 md:w-auto relative bg-blend-multiply bg-slate-700 bg-[image:var(--image-url)] bg-cover bg-center bg-no-repeat flex h-80 flex-col gap-4 items-center justify-center p-6 rounded max-w-screen"
         rel="noreferrer"
       >
-        <span className="text-xl font-semibold text-white text-center">{title}</span>
+        <p className="text-xl font-semibold text-white text-center line-clamp-3">{title}</p>
         <span className="text-md text-slate-50 max-w-xl text-center">
           {additionalText}
         </span>
