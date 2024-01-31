@@ -8,11 +8,6 @@ export default function Contact() {
     <div>
       <div className="text-white bg-blue-950">
         <div className="flex flex-col md:flex-row gap-16 justify-center items-center p-16">
-          <p className="w-60 text-left md:text-right gap-2 leading-8">
-            i love to solve new problems and learn new things
-            <br />
-            please reach out if you can help me do that
-          </p>
           <img className="h-40" src="/logos/logo-white.png" alt="logo" />
           <div className="flex flex-col gap-2">
             <div className="flex gap-2 items-center">
