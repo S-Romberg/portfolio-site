@@ -180,8 +180,9 @@ React.HTMLAttributes<HTMLDivElement> & CarouselProps
         >
           {children}
           <div className="embla__dots">
-            {scrollSnaps.map((_, index) => (
+            {scrollSnaps.map((number, index) => (
               <DotButton
+                // eslint-disable-next-line react/no-array-index-key
                 key={index}
                 onClick={() => scrollTo(index)}
                 className={'embla__dot'.concat(
