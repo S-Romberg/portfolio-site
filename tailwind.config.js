@@ -18,6 +18,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'dogs': "url('/dogs_green.jpg')",
+        'dolphins': "url('/water_1.jpg')",
       },
       colors: {
         border: "hsl(var(--border))",
