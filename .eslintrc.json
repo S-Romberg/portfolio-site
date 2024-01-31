@@ -1,0 +1,64 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "next/core-web-vitals",
+    "airbnb",
+    "airbnb-typescript"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": 13,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "max-lines": [
+      "error",
+      {
+        "max": 500,
+        "skipComments": true,
+        "skipBlankLines": true
+      }
+    ],
+    "max-len":"off",
+    "react/forbid-prop-types": 0,
+    "react/prop-types": 0,
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "react/require-default-props": "off",
+    "react/function-component-definition": "off",
+    "react/button-has-type": "off",
+    "react/jsx-props-no-spreading": "off",
+    "object-curly-newline": [
+      "error",
+      {
+        "multiline": true,
+        "minProperties": 5
+      }
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "jsx-a11y/label-has-associated-control": [
+      0,
+      {
+        "controlComponents": [
+          "Input"
+        ]
+      }
+    ]
+  }
+}

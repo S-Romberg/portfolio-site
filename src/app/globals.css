@@ -1,0 +1,158 @@
+.personalPic {
+  background-image: url("/dogs_green.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw auto;
+  background-attachment: fixed;
+  height: 60vh;
+}
+
+.App {
+  position: absolute;
+  z-index: -5;
+  height: 100vh;
+  width: 100vw;
+}
+
+html {
+  position: absolute;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .landing-viewport__video{
+    overflow-y: hidden;
+    height: 100%;
+    width: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .landing-viewport__video {
+    overflow-y: hidden;
+    width: auto;
+  }
+}
+
+.App-header {
+  height: 80vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.landing-viewport__video {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 500px) {
+  *{
+    overflow-x: hidden;
+  }
+  .landing-viewport__video {
+    display: none;
+  }
+  header {
+    font-size: 1vw;
+    width: 100vw;
+    color: rgb(255, 255, 255);
+    background-image: url('/screenshot.png');
+    background-attachment: fixed;
+    background-size: auto 100vh;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+@layer base {
+  @font-face {
+    font-family: 'Montserrat';
+  }
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
