@@ -40,7 +40,7 @@ export default function Projects() {
                     src="/ocean-chart.png"
                     alt="Photo a global map plotting points with temperature readings"
                   />
-                  <span className="text-xl font-semibold">Ocean Temperature Prediction</span>
+                  <span className="text-xl font-semibold">Predicting Coral Bleaching - Linear Regression Model</span>
                 </CardContent>
               </Card>
             </div>

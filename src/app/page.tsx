@@ -7,14 +7,12 @@ import Contact from '@/components/Contact';
 import Header from '@/components/Header';
 
 export default function Home() {
-  const [modal, setModal] = useState<boolean>(false);
-
   return (
-    <div className="App" onClick={() => modal && setModal(false)}>
+    <div className="App">
       <Header />
       <Body />
       <Projects />
-      <Contact showModal={() => setModal(true)} />
+      <Contact />
     </div>
   );
 }
