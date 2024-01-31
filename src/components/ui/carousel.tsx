@@ -64,6 +64,7 @@ React.HTMLAttributes<HTMLDivElement> & CarouselProps
     const [canScrollPrev, setCanScrollPrev] = React.useState(false);
     const [canScrollNext, setCanScrollNext] = React.useState(false);
 
+    // eslint-disable-next-line @typescript-eslint/no-shadow
     const onSelect = React.useCallback((api: CarouselApi) => {
       if (!api) {
         return;
@@ -111,6 +112,7 @@ React.HTMLAttributes<HTMLDivElement> & CarouselProps
       api.on('reInit', onSelect);
       api.on('select', onSelect);
 
+      // eslint-disable-next-line consistent-return
       return () => {
         api?.off('select', onSelect);
       };
@@ -118,6 +120,7 @@ React.HTMLAttributes<HTMLDivElement> & CarouselProps
 
     return (
       <CarouselContext.Provider
+      // eslint-disable-next-line react/jsx-no-constructed-context-values
         value={{
           carouselRef,
           api,

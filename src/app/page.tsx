@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import Body from '@/components/Body';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
