@@ -26,10 +26,10 @@ export default function Contact() {
               <FontAwesomeIcon icon={faLinkedin} />
               <p>linkedin.com/in/spencer-romberg</p>
             </a>
-            <a className="flex gap-2  items-center" href="https://drive.google.com/file/d/1NRLR6Uc11tOOkXYzXh5hPCUl9pRxL6dn/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faFilePdf} />
-              <p>resume</p>
-            </a>
+            {/* <a className="flex gap-2  items-center" href="https://docs.google.com/document/d/1hOq1HQuGBHpz_55ZnPIEWsr49SLkV9g9it6IXoh7_EM" target="_blank" rel="noopener noreferrer"> */}
+            {/*  <FontAwesomeIcon icon={faFilePdf} /> */}
+            {/*  <p>resume</p> */}
+            {/* </a> */}
           </div>
         </div>
       </div>
