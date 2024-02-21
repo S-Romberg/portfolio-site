@@ -12,7 +12,7 @@ export default function Contact() {
           <div className="flex flex-col gap-2">
             <div className="flex gap-2 items-center">
               <FontAwesomeIcon icon={faPhoneSquare} />
-              <p>720-215-1324</p>
+              <p>(720) 515–8462</p>
             </div>
             <div className="flex gap-2  items-center">
               <FontAwesomeIcon icon={faEnvelope} />
