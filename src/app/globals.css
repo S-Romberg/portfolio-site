@@ -44,7 +44,7 @@ html {
   content: '';
 }
 .embla__dot--selected:after {
-  background: linear-gradient(45deg, blue, darkblue);
+  background: lightgrey;
 }
 
 @media (min-aspect-ratio: 16/9) {

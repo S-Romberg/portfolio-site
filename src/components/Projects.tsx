@@ -7,8 +7,8 @@ import CarouselCard from '@/components/CarouselCard';
 
 export default function Projects() {
   return (
-    <div className="flex flex-col py-8 items-center justify-center lg:border-r lg:border-slate-700 lg:border-solid lg:pr-16">
-      <h2 className="text-3xl text-slate-600 font-semibold text-center mb-8 pb-2 border-b border-solid border-slate-400 w-3/4">Projects</h2>
+    <div className="flex flex-col py-8 items-center justify-center lg:border-r lg:border-slate-300 lg:border-solid lg:pr-16">
+      <h2 className="text-3xl text-slate-600 font-semibold text-center mb-8 pb-2 w-3/4">Projects</h2>
       <Carousel className="max-w-3xl">
         <CarouselContent className="flex items-center">
           <CarouselCard
